@@ -1,0 +1,21 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: sdk
+    version: '9.0.x'
+  displayName: 'Use .NET SDK'
+- script: dotnet build --configuration Release
+  displayName: 'Build'
+  workingDirectory: e2e
+- script: pwsh CarvedRock.End2End.Tests/bin/Release/net9.0/playwright.ps1 install --with-deps
+  displayName: 'Install Playwright browsers'
+  workingDirectory: e2e
+- script: dotnet test -s ./aca-firefox.runsettings --configuration Release
+  displayName: 'Run tests'
+  workingDirectory: e2e

@@ -1,0 +1,12 @@
+<RunSettings>
+    <TestRunParameters>
+        <Parameter name="BaseUrl" value="https://carvedrock-webapp.whiteglacier-d72dac78.eastus2.azurecontainerapps.io" />
+		<Parameter name="ApiUrl" value="https://carvedrock-api.whiteglacier-d72dac78.eastus2.azurecontainerapps.io" />
+    </TestRunParameters>
+	<Playwright>
+		<BrowserName>firefox</BrowserName>
+		<!--<LaunchOptions>
+			<Channel>msedge</Channel>
+		</LaunchOptions>-->
+	</Playwright>
+</RunSettings>

@@ -1,0 +1,19 @@
+name: Playwright Tests - From Container
+on:
+  workflow_dispatch:
+  
+jobs:
+  playwright:
+    name: 'Playwright Tests - From Container'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright/dotnet:v1.51.0-noble # :latest? or remove tag
+      options: --user 1001
+    steps:
+      - uses: actions/checkout@v4      
+      - name: Build
+        run: dotnet build
+        working-directory: e2e
+      - name: Run your tests
+        run: dotnet test -s ./aca-firefox.runsettings
+        working-directory: e2e
