@@ -8,8 +8,8 @@ public class ProductMappingProfile : Profile
 	public ProductMappingProfile()
 	{
         CreateMap<Product, ProductModel>()           
-            .ReverseMap();
+            .ReverseMap().MaxDepth(64);
 
-        CreateMap<NewProductModel, Product>();
+        CreateMap<NewProductModel, Product>().MaxDepth(64);
     }
 }
