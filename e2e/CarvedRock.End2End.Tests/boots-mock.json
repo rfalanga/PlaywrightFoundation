@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "MOCKED-Trailblazer",
+    "description": "Great support in this high-top to take you to great heights and trails.",
+    "price": 69.99,
+    "category": "boots",
+    "imgUrl": "https://www.pluralsight.com/content/dam/pluralsight2/teach/author-tools/carved-rock-fitness/img-brownboots.jpg"
+  },
+  {
+    "id": 2,
+    "name": "MOCKED-Coastliner",
+    "description": "Easy in and out with this lightweight but rugged shoe with great ventilation to get your around shores, beaches, and boats.",
+    "price": 49.99,
+    "category": "boots",
+    "imgUrl": "https://www.pluralsight.com/content/dam/pluralsight2/teach/author-tools/carved-rock-fitness/img-greyboots.jpg"
+  },
+  {
+    "id": 3,
+    "name": "MOCKED-Woodsman",
+    "description": "All the insulation and support you need when wandering the rugged trails of the woods and backcountry.",
+    "price": 64.99,
+    "category": "boots",
+    "imgUrl": "/images/shutterstock_222721876.jpg"
+  },
+  {
+    "id": 4,
+    "name": "MOCKED-Billy",
+    "description": "Get up and down rocky terrain like a billy-goat with these awesome high-top boots with outstanding support.",
+    "price": 79.99,
+    "category": "boots",
+    "imgUrl": "/images/shutterstock_475046062.jpg"
+  }
+]
