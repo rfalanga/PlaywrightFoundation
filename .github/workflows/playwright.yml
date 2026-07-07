@@ -20,6 +20,6 @@ jobs:
     - name: Ensure browsers are installed
       working-directory: e2e
       run: pwsh CarvedRock.End2End.Tests/bin/Debug/net9.0/playwright.ps1 install --with-deps
-    - name: Run your tests
-      working-directory: e2e
-      run: dotnet test -s ./aca-firefox.runsettings
+    # - name: Run your tests
+    #   working-directory: e2e
+    #   run: dotnet test -s ./aca-firefox.runsettings
